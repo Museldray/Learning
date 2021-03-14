@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Dawid Stuczyk\\Documents\\StudiaNAUKA!\\II rok\\IV semestr\\Aplikacje internetowe .NET\\Moje\\PS2_dotNET\\PS2_dotNET.csproj": {}
+    "E:\\Dawid Stuczyk\\Documents\\Kodzenie\\Museldray\\Learning\\dotNET\\PS2_dotNET\\PS2_dotNET.csproj": {}
   },
   "projects": {
-    "E:\\Dawid Stuczyk\\Documents\\StudiaNAUKA!\\II rok\\IV semestr\\Aplikacje internetowe .NET\\Moje\\PS2_dotNET\\PS2_dotNET.csproj": {
+    "E:\\Dawid Stuczyk\\Documents\\Kodzenie\\Museldray\\Learning\\dotNET\\PS2_dotNET\\PS2_dotNET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Dawid Stuczyk\\Documents\\StudiaNAUKA!\\II rok\\IV semestr\\Aplikacje internetowe .NET\\Moje\\PS2_dotNET\\PS2_dotNET.csproj",
+        "projectUniqueName": "E:\\Dawid Stuczyk\\Documents\\Kodzenie\\Museldray\\Learning\\dotNET\\PS2_dotNET\\PS2_dotNET.csproj",
         "projectName": "PS2_dotNET",
-        "projectPath": "E:\\Dawid Stuczyk\\Documents\\StudiaNAUKA!\\II rok\\IV semestr\\Aplikacje internetowe .NET\\Moje\\PS2_dotNET\\PS2_dotNET.csproj",
+        "projectPath": "E:\\Dawid Stuczyk\\Documents\\Kodzenie\\Museldray\\Learning\\dotNET\\PS2_dotNET\\PS2_dotNET.csproj",
         "packagesPath": "C:\\Users\\Dawid Stuczyk\\.nuget\\packages\\",
-        "outputPath": "E:\\Dawid Stuczyk\\Documents\\StudiaNAUKA!\\II rok\\IV semestr\\Aplikacje internetowe .NET\\Moje\\PS2_dotNET\\obj\\",
+        "outputPath": "E:\\Dawid Stuczyk\\Documents\\Kodzenie\\Museldray\\Learning\\dotNET\\PS2_dotNET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dawid Stuczyk\\AppData\\Roaming\\NuGet\\NuGet.Config",
