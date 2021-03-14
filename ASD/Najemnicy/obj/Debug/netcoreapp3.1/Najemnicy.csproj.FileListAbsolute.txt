@@ -1,0 +1,13 @@
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\bin\Debug\netcoreapp3.1\Najemnicy.exe
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\bin\Debug\netcoreapp3.1\Najemnicy.deps.json
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\bin\Debug\netcoreapp3.1\Najemnicy.runtimeconfig.json
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\bin\Debug\netcoreapp3.1\Najemnicy.runtimeconfig.dev.json
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\bin\Debug\netcoreapp3.1\Najemnicy.dll
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\bin\Debug\netcoreapp3.1\Najemnicy.pdb
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\obj\Debug\netcoreapp3.1\Najemnicy.csprojAssemblyReference.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\obj\Debug\netcoreapp3.1\Najemnicy.AssemblyInfoInputs.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\obj\Debug\netcoreapp3.1\Najemnicy.AssemblyInfo.cs
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\obj\Debug\netcoreapp3.1\Najemnicy.csproj.CoreCompileInputs.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\obj\Debug\netcoreapp3.1\Najemnicy.dll
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\obj\Debug\netcoreapp3.1\Najemnicy.pdb
+E:\Dawid Stuczyk\Documents\Kodzenie\Algorytmy i struktury danych\Najemnicy\obj\Debug\netcoreapp3.1\Najemnicy.genruntimeconfig.cache
