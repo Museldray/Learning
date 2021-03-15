@@ -35,3 +35,40 @@ E:\Dawid Stuczyk\Documents\StudiaNAUKA!\II rok\IV semestr\Aplikacje internetowe 
 E:\Dawid Stuczyk\Documents\StudiaNAUKA!\II rok\IV semestr\Aplikacje internetowe .NET\Moje\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.pdb
 E:\Dawid Stuczyk\Documents\StudiaNAUKA!\II rok\IV semestr\Aplikacje internetowe .NET\Moje\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.genruntimeconfig.cache
 E:\Dawid Stuczyk\Documents\StudiaNAUKA!\II rok\IV semestr\Aplikacje internetowe .NET\Moje\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.csproj.CopyComplete
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\bin\Debug\netcoreapp3.1\PS2_dotNET.exe
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\bin\Debug\netcoreapp3.1\PS2_dotNET.deps.json
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\bin\Debug\netcoreapp3.1\PS2_dotNET.runtimeconfig.json
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\bin\Debug\netcoreapp3.1\PS2_dotNET.runtimeconfig.dev.json
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\bin\Debug\netcoreapp3.1\PS2_dotNET.dll
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\bin\Debug\netcoreapp3.1\PS2_dotNET.pdb
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\bin\Debug\netcoreapp3.1\PS2_dotNET.Views.dll
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\bin\Debug\netcoreapp3.1\PS2_dotNET.Views.pdb
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.csprojAssemblyReference.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.AssemblyInfoInputs.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.AssemblyInfo.cs
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.csproj.CoreCompileInputs.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.MvcApplicationPartsAssemblyInfo.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.RazorAssemblyInfo.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.RazorAssemblyInfo.cs
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\staticwebassets\PS2_dotNET.StaticWebAssets.Manifest.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\staticwebassets\PS2_dotNET.StaticWebAssets.xml
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\scopedcss\bundle\PS2_dotNET.styles.css
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.TagHelpers.input.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.TagHelpers.output.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.RazorCoreGenerate.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.RazorTargetAssemblyInfo.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.RazorTargetAssemblyInfo.cs
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.Views.pdb
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.dll
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.pdb
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.genruntimeconfig.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS2_dotNET\obj\Debug\netcoreapp3.1\PS2_dotNET.csproj.CopyComplete
