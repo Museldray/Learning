@@ -52,6 +52,7 @@ namespace FizzBuzz_dotNET
                 {
                     fizzbuzz.Result = Convert.ToString(fizzbuzz.Number);
                 }
+
                 HttpContext.Session.SetString("Wynik", JsonConvert.SerializeObject(fizzbuzz));
 
                 return Page();
