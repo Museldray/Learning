@@ -9,34 +9,21 @@
     <form method="post">
         <div class="form-row">
             <div class="col">
-                <label asp-for="Address.Street">Ulica:</label><br />
-                <input asp-for="Address.Street" class="form-control" placeholder="Wpisz tutaj" />
-                <span asp-validation-for="Address.Street" class="text-danger"></span>
-            </div>
-            <div class="col">
-                <label asp-for="Address.Number">Numer:</label><br />
-                <input asp-for="Address.Number" class="form-control" placeholder="Wpisz tutaj" />
-                <span asp-validation-for="Address.Number" class="text-danger"></span>
-            </div>
-            <div class="col">
-                <label asp-for="Address.ZipCode">Kod pocztowy:</label><br />
-                <input asp-for="Address.ZipCode" class="form-control" placeholder="Wpisz tutaj" />
-                <span asp-validation-for="Address.ZipCode" class="text-danger"></span>
-            </div>
-            <div class="col">
-                <label asp-for="Address.City">Miasto:</label><br />
-                <input asp-for="Address.City" class="form-control" placeholder="Wpisz tutaj" />
-                <span asp-validation-for="Address.City" class="text-danger"></span>
-            </div>
-            <div class="col">
-                <label asp-for="Liczba">Liczba:</label><br />
-                <input asp-for="Liczba" class="form-control" placeholder="Wpisz tutaj liczbe całkowitą" />
-                <span asp-validation-for="Liczba" class="text-danger"></span>
+                <label asp-for="fizzbuzz.Number">Numer:</label><br />
+                <input asp-for="fizzbuzz.Number" class="form-control" placeholder="Wpisz tutaj" />
+                <span asp-validation-for="fizzbuzz.Number" class="text-danger"></span>
             </div>
         </div>
         <br />
         <div class="text-center">
             <button type="submit" class="btn btn-primary">Zatwierdź</button>
         </div>
+        <br />
+        @if (Model.fizzbuzz != null)
+        {
+            <div class="text-center">
+                <h4>Wynik: @Model.fizzbuzz.Result</h4>
+            </div>
+        }
     </form>
 </div>
