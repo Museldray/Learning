@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\dotNET",
+    "\\dotNET\\PS3_dotNET"
   ],
-  "SelectedNode": "\\PS3_dotNET.sln",
+  "SelectedNode": "\\dotNET\\PS3_dotNET\\PS3_dotNET.sln",
   "PreviewInSolutionExplorer": false
 }
