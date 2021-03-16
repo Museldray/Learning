@@ -3,3 +3,28 @@
 @{
     ViewData["Title"] = "Ostatnio szukane";
 }
+
+<p>Dane w zapisane w sesji</p>
+@if (Model.address != null && Model.result != null)
+{ 
+<p>
+    @Html.DisplayNameFor(model => Model.address.Street):
+    @Model.address.Street
+</p>
+<p>
+    @Html.DisplayNameFor(model => Model.address.City):
+    @Model.address.City
+</p>
+<p>
+    @Html.DisplayNameFor(model => Model.address.Number):
+    @Model.address.Number
+</p>
+<p>
+    @Html.DisplayNameFor(model => Model.address.ZipCode):
+    @Model.address.ZipCode
+</p>
+<p>
+    @Html.DisplayNameFor(model => Model.result):
+    @Model.result
+</p>
+}

@@ -25,8 +25,13 @@
             </div>
             <div class="col">
                 <label asp-for="Address.City">Miasto:</label><br />
-                <input asp-for="Address.City" class="form-control"placeholder="Wpisz tutaj" />
+                <input asp-for="Address.City" class="form-control" placeholder="Wpisz tutaj" />
                 <span asp-validation-for="Address.City" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <label asp-for="Liczba">Liczba:</label><br />
+                <input asp-for="Liczba" class="form-control" placeholder="Wpisz tutaj liczbe całkowitą" />
+                <span asp-validation-for="Liczba" class="text-danger"></span>
             </div>
         </div>
         <br />

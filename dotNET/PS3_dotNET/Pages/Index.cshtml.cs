@@ -22,6 +22,9 @@ namespace PS3_dotNET.Pages
         [BindProperty]
         public Address Address { get; set; }
 
+        [BindProperty]
+        public int Liczba { get; set; }
+
         [BindProperty(SupportsGet = true)]
         public string Name { get; set; }
 
@@ -39,9 +42,9 @@ namespace PS3_dotNET.Pages
             {
                 return Page();
             }
-            HttpContext.Session.SetString("SessionAddress",
-            JsonConvert.SerializeObject(Address));
-            return RedirectToPage("./AddressList");
+            HttpContext.Session.SetString("SessionAddress", JsonConvert.SerializeObject(Address));
+            HttpContext.Session.SetInt32("Liczba", Liczba);
+            return RedirectToPage("./Address");
         }
     }
 }

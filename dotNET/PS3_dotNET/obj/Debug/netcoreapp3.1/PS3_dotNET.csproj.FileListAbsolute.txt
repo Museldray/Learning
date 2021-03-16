@@ -37,3 +37,4 @@ E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS3_dotNET\obj\Deb
 E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS3_dotNET\obj\Debug\netcoreapp3.1\PS3_dotNET.dll
 E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS3_dotNET\obj\Debug\netcoreapp3.1\PS3_dotNET.pdb
 E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS3_dotNET\obj\Debug\netcoreapp3.1\PS3_dotNET.genruntimeconfig.cache
+E:\Dawid Stuczyk\Documents\Kodzenie\Museldray\Learning\dotNET\PS3_dotNET\obj\Debug\netcoreapp3.1\Razor\Pages\Address.cshtml.g.cs
