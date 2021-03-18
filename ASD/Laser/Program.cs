@@ -69,9 +69,9 @@ namespace Laser
             }
             else
             {
-                int wynik = Search(0, middle, target, table);
+                int result = Search(0, middle, target, table);
 
-                return wynik != -1 ? wynik : middle;
+                return result != -1 ? result : middle;
             }
         }
 
@@ -92,10 +92,10 @@ namespace Laser
             }
 
             // All bases in total
-            int rozmiar = Int32.Parse(plik_in.First());
+            int allBases = Int32.Parse(plik_in.First());
 
             // Create table 2 times larger than amount of bases
-            int[] tablica1 = new int[rozmiar * 2];
+            int[] table = new int[allBases * 2];
 
             int maxBasesTotal = 0, 
                 maxBasesTmp,
@@ -106,28 +106,28 @@ namespace Laser
             stopWatch.Start();
 
             // Read and insert preprocessed data into table
-            foreach (string linia in plik_in.Skip(1))
+            foreach (string line in plik_in.Skip(1))
             {
-                string[] liczby = linia.Split(' ');
-                int x = 60 * Convert.ToInt32(liczby[0]);
-                int y = Convert.ToInt32(liczby[1]);
-                tablica1[i] = x + y;
+                string[] data = line.Split(' ');
+                int x = 60 * Convert.ToInt32(data[0]);
+                int y = Convert.ToInt32(data[1]);
+                table[i] = x + y;
                 i++;
             }
             
             // Create new bases with position = actual base + 360 degrees in order to check all possible angle
-            for (i = 0; i < rozmiar; i++)
+            for (i = 0; i < allBases; i++)
             {
-                tablica1[i + rozmiar] = tablica1[i] + 21600;
+                table[i + allBases] = table[i] + 21600;
             }
 
             // Sort bases with merge sort
-            tablica1 = Sort(tablica1);
+            table = Sort(table);
 
-            for (i = 0; i < rozmiar; i++)
+            for (i = 0; i < allBases; i++)
             {
                 // Binary search for bases in range of lazer (90 degrees)
-                maxBasesTmp = Search(0, rozmiar * 2, tablica1[i] + 5400, tablica1);
+                maxBasesTmp = Search(0, allBases * 2, table[i] + 5400, table);
                 maxBasesTmp -= i;
 
                 // Update new max amount of bases in range of our lazer if found better option
