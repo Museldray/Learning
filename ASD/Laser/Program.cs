@@ -8,94 +8,105 @@ namespace Laser
 {
     class Program
     {
-        public static int[] Sortuj(int[] tablica)                                  //Dzielenie tablic do posortowania na mniejsze tablice
+        // Sort
+        public static int[] Sort(int[] table)
         {
-            if (tablica.Length <= 1)
+            if (table.Length <= 1)
             {
-                return tablica;
+                return table;
             }
-            int[] pierwsza = new int[tablica.Length / 2];
-            int[] druga = new int[tablica.Length - pierwsza.Length];
-            for (int i = 0; i < pierwsza.Length; i++)
+            int[] first = new int[table.Length / 2];
+            int[] second = new int[table.Length - first.Length];
+            for (int i = 0; i < first.Length; i++)
             {
-                pierwsza[i] = tablica[i];
+                first[i] = table[i];
             }
-            for (int i = 0; i < druga.Length; i++)
+            for (int i = 0; i < second.Length; i++)
             {
-                druga[i] = tablica[pierwsza.Length + i];
+                second[i] = table[first.Length + i];
             }
-            return Scal(Sortuj(pierwsza), Sortuj(druga));
+            return Merge(Sort(first), Sort(second));
         }
 
-        public static int Szukaj(int min, int max, int szukana, int[] tablica)             //Wyszukiwanie binarne
+        // Merge
+        private static int[] Merge(int[] first, int[] second)
         {
-            int srodek = min + (max - min) / 2;
-            if (min == max)
+            int[] toMerge = new int[first.Length + second.Length];
+            int indexFirst, indexSecond, indexMerge;
+            for (indexFirst = 0, indexSecond = 0, indexMerge = 0; indexMerge < toMerge.Length; indexMerge++)
             {
-                if (tablica[min] <= szukana)
+                if (indexFirst >= first.Length)
                 {
-                    return -1;
+                    toMerge[indexMerge] = second[indexSecond++];
+                }
+                else if (indexSecond >= second.Length)
+                {
+                    toMerge[indexMerge] = first[indexFirst++];
+                }
+                else if (first[indexFirst] <= second[indexSecond])
+                {
+                    toMerge[indexMerge] = first[indexFirst++];
                 }
                 else
                 {
-                    return min;
+                    toMerge[indexMerge] = second[indexSecond++];
                 }
             }
-            else if (tablica[srodek] <= szukana)
+            return toMerge;
+        }
+
+        // Binary search
+        private static int Search(int min, int max, int target, int[] table)
+        {
+            int middle = min + (max - min) / 2;
+            if (min == max)
             {
-                return Szukaj(srodek + 1, max, szukana, tablica);
+                return table[min] <= target ? -1 : min;
+            }
+            else if (table[middle] <= target)
+            {
+                return Search(middle + 1, max, target, table);
             }
             else
             {
-                int wynik = Szukaj(0, srodek, szukana, tablica);
-                if (wynik != -1)
-                {
-                    return wynik;
-                }
-                else
-                {
-                    return srodek;
-                }
-            }
-        }
+                int wynik = Search(0, middle, target, table);
 
-        public static int[] Scal(int[] pierwsza, int[] druga)                //Sortowanie danych w tabelach i scalanie jej w jedna
-        {
-            int[] do_scalenia = new int[pierwsza.Length + druga.Length];
-            int i_pierwszy, i_drugi, i_scal;
-            for (i_pierwszy = 0, i_drugi = 0, i_scal = 0; i_scal < do_scalenia.Length; i_scal++)
-            {
-                if (i_pierwszy >= pierwsza.Length)
-                {
-                    do_scalenia[i_scal] = druga[i_drugi++];
-                }
-                else if (i_drugi >= druga.Length)
-                {
-                    do_scalenia[i_scal] = pierwsza[i_pierwszy++];
-                }
-                else if (pierwsza[i_pierwszy] <= druga[i_drugi])
-                {
-                    do_scalenia[i_scal] = pierwsza[i_pierwszy++];
-                }
-                else
-                {
-                    do_scalenia[i_scal] = druga[i_drugi++];
-                }
+                return wynik != -1 ? wynik : middle;
             }
-            return do_scalenia;
         }
 
 
         static void Main()
         {
-            var plik_in = File.ReadLines("in.txt");                //Wczytanie pliku
-            string linia1 = plik_in.First();                     //Aktualizacja informacji o rozmiarze danych
-            int rozmiar = Int32.Parse(linia1);
-            int[] tablica1 = new int[rozmiar * 2];                 //Tworzenie tabeli o rozmiarze 2n gdzie n jest iloscia danych w pliku
-            int i = 0, max_baz_ogolnie = 0, max_baz_aktualnie;
+            // Read File and check if it exists
+            string[] plik_in;
+            try
+            {
+            plik_in = File.ReadAllLines("in.txt");
+            }
+            catch
+            {
+                Console.WriteLine("There's no file to read!");
+                Console.ReadKey();
+                return;
+            }
+
+            // All bases in total
+            int rozmiar = Int32.Parse(plik_in.First());
+
+            // Create table 2 times larger than amount of bases
+            int[] tablica1 = new int[rozmiar * 2];
+
+            int maxBasesTotal = 0, 
+                maxBasesTmp,
+                i = 0;
+
+            // Timer start
             Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();                                   //Timer start
-            foreach (string linia in plik_in.Skip(1))            //Wczytywanie danych z pliku i preprocessing danych, zamiana stopni na minuty i sumowanie jako int, wykonuje sie n razy
+            stopWatch.Start();
+
+            // Read and insert preprocessed data into table
+            foreach (string linia in plik_in.Skip(1))
             {
                 string[] liczby = linia.Split(' ');
                 int x = 60 * Convert.ToInt32(liczby[0]);
@@ -103,31 +114,41 @@ namespace Laser
                 tablica1[i] = x + y;
                 i++;
             }
-            for (i = 0; i < rozmiar; i++)          //Pętla rozszerzająca tablicę z danymi o te same dane z dodatkowymi 360 stopniami, w celu uproszczenia wyszukiwania odpowiednich baz, wykonuje sie 2n razy
+            
+            // Create new bases with position = actual base + 360 degrees in order to check all possible angle
+            for (i = 0; i < rozmiar; i++)
             {
                 tablica1[i + rozmiar] = tablica1[i] + 21600;
             }
-            tablica1 = Sortuj(tablica1);                           //Sortowanie tablicy metodą scalania
-            for (i = 0; i < rozmiar; i++)                            //Glowna petla algorytmu wykonujaca sie n razy
-            {
-                max_baz_aktualnie = Szukaj(0, rozmiar * 2, tablica1[i] + 5400, tablica1);    //Wyszukiwanie binarne o zlozonosci logn
-                max_baz_aktualnie -= i;
 
-                if (max_baz_aktualnie > max_baz_ogolnie)           //Aktualizacja maksymalnej ilosci baz w zasiegu lasera
+            // Sort bases with merge sort
+            tablica1 = Sort(tablica1);
+
+            for (i = 0; i < rozmiar; i++)
+            {
+                // Binary search for bases in range of lazer (90 degrees)
+                maxBasesTmp = Search(0, rozmiar * 2, tablica1[i] + 5400, tablica1);
+                maxBasesTmp -= i;
+
+                // Update new max amount of bases in range of our lazer if found better option
+                if (maxBasesTmp > maxBasesTotal)
                 {
-                    max_baz_ogolnie = max_baz_aktualnie;
+                    maxBasesTotal = maxBasesTmp;
                 }
             }
-            stopWatch.Stop();                                     //Timer stop
+            
+            // Timer stop
+            stopWatch.Stop();
             TimeSpan ts = stopWatch.Elapsed;
             string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds);
 
             // Save to file
             using (StreamWriter plik_out = new StreamWriter("out.txt"))
             {
-                plik_out.WriteLine(max_baz_ogolnie + "\n" + elapsedTime);
+                plik_out.WriteLine(maxBasesTotal + "\n" + elapsedTime);
 
             }
+            Console.WriteLine(maxBasesTotal + "\n" + elapsedTime);
         }
     }
 }
