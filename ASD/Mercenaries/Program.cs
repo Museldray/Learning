@@ -13,7 +13,7 @@ namespace Mercenaries
         static void Main()
         {
             // Initialize object Army
-            Army bestArmy = new Army();
+            Army bestArmy;
 
             // Read data from file
             string[] plik_in;
