@@ -6,16 +6,16 @@ namespace Mercenaries.Models
 {
     class Mercenary
     {
-        private int id = 0;
-        public int posilek;
-        public int sila;
-        public int rozrywka;
-        public Mercenary(int posilek, int sila, int rozrywka)
+        private int id;
+        public int food;
+        public int strength;
+        public int joy;
+        public Mercenary(int id, int posilek, int sila, int rozrywka)
         {
             this.id = id;
-            this.posilek = posilek;
-            this.sila = sila;
-            this.rozrywka = rozrywka;
+            this.food = posilek;
+            this.strength = sila;
+            this.joy = rozrywka;
 
         }
         public int Id
