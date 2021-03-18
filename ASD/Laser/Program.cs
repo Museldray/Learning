@@ -4,7 +4,7 @@ using System.Linq;
 using System.Diagnostics;
 using System.Collections;
 
-namespace Laser
+namespace Lazer
 {
     class Program
     {

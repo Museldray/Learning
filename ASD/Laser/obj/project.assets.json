@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dawid Stuczyk\\Documents\\Kodzenie\\Museldray\\Learning\\ASD\\Laser\\Laser.csproj",
-      "projectName": "Laser",
-      "projectPath": "E:\\Dawid Stuczyk\\Documents\\Kodzenie\\Museldray\\Learning\\ASD\\Laser\\Laser.csproj",
+      "projectUniqueName": "E:\\Dawid Stuczyk\\Documents\\Kodzenie\\Museldray\\Learning\\ASD\\Laser\\Lazer.csproj",
+      "projectName": "Lazer",
+      "projectPath": "E:\\Dawid Stuczyk\\Documents\\Kodzenie\\Museldray\\Learning\\ASD\\Laser\\Lazer.csproj",
       "packagesPath": "C:\\Users\\Dawid Stuczyk\\.nuget\\packages\\",
       "outputPath": "E:\\Dawid Stuczyk\\Documents\\Kodzenie\\Museldray\\Learning\\ASD\\Laser\\obj\\",
       "projectStyle": "PackageReference",
