@@ -1,4 +1,4 @@
-# Problem 3 - Lochy
+# Problem - Lochy
 
 W pewnym państwie rządził dobry i sprawiedliwy król. Uczciwych ludzi nagradzał, natomiast
 złych karał. Najsurowszą karą było wtrącenie do więzienia. Nie było to jednak zwykłe więzienie,
