@@ -66,6 +66,7 @@ namespace Lochy
 
             tablica2[x, y] = tablica1[x, y];                //Zaktualizuj celę jako sprawdzoną w celu uniknięcie sprawdzania jej ponownie
 
+
             if(x!=x_max-1 && tablica2[x + 1, y] == 0)                       //Jeżeli nie wykracza poza tablicę i nie był sprawdzany to:
             {
                 if (Sprawdz(poziom_max, tablica1[x, y], tablica1[x + 1, y]) == true)    //Jeżeli woda może się przelać to:
@@ -163,8 +164,8 @@ namespace Lochy
                 plik_out.WriteLine(wynik + "\n" + elapsedTime);                 
 
             }
-            /*Console.WriteLine(wynik + "\n" + elapsedTime);                    //Dla szybszych testów                
-            Console.ReadKey();*/
+            Console.WriteLine(wynik + "\n" + elapsedTime);                    //Dla szybszych testów                
+            Console.ReadKey();
         }
     }
 }
