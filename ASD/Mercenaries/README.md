@@ -27,13 +27,13 @@ możliwościach wynajmu Rzymianina. W kolejnej linii podane są numery wynajęty
 ### Przykład:
 Wejście:
 
-10 8 //Rzymianin może zapewnić 10 jednostek prowiantu i 8 rozrywek
+10 8  //Rzymianin może zapewnić 10 jednostek prowiantu i 8 rozrywek
 
-4 //Jest 4 najemników
+4  //Jest 4 najemników
 
-3 5 2 //Pierwszy z nich ma siłę 3, wymaga 5 prowiantu i 2 rozrywki
+3 5 2  //Pierwszy z nich ma siłę 3, wymaga 5 prowiantu i 2 rozrywki
 
-4 6 3 //itd.
+4 6 3  //itd.
 
 2 4 6
 
@@ -41,6 +41,6 @@ Wejście:
 
 Wyjście:
 
-5 //najmocniejszy wynajęty oddział może mieć siłę 5
+5  //najmocniejszy wynajęty oddział może mieć siłę 5
 
-1 3 //składa on się z żołnierzy nr 1 oraz 3, Rzymianin może sprostać ich wymaganiom
+1 3  //składa on się z żołnierzy nr 1 oraz 3, Rzymianin może sprostać ich wymaganiom
