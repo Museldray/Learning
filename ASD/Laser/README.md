@@ -1,4 +1,4 @@
-# Problem 3 – Misja
+# Problem – Misja
 Ziemia weszła w konflikt z obcą cywilizacją, która posiada wyjątkowo niebezpieczną broń mogącą
 zniszczyć naszą planetę. Kapitan kosmicznego statku „Enterprise” ma za zadanie unieszkodliwić
 wroga. Posiada on rozmieszczenie baz nieprzyjaciela i planuje im przeszkodzić. W tym celu
