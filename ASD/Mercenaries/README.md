@@ -1,4 +1,4 @@
-# Problem 3 - Rzymscy najemnicy
+# Problem - Rzymscy najemnicy
 
 Pewien Rzymianin żył sobie w szczęściu i bogactwie. Pewnego dnia stało się nieszczęście, gdyż
 jego ukochana została uprowadzona przez jego zaciekłych wrogów. Co mu teraz po samym
