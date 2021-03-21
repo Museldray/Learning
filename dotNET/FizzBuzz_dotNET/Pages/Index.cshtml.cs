@@ -53,6 +53,7 @@ namespace FizzBuzz_dotNET
                     fizzbuzz.Result = $"Liczba: {fizzbuzz.Number} nie spełnia kryteriów Fizz/Buzz";
                 }
 
+                fizzbuzz.Date = DateTime.Now;
                 HttpContext.Session.SetString("Wynik", JsonConvert.SerializeObject(fizzbuzz));
 
                 return Page();

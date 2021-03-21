@@ -13,7 +13,10 @@ namespace FizzBuzz_dotNET.Models
         [Display(Name = "Numer")]
         public int Number { get; set; }
 
-        [Display(Name ="Result")]
+        [Display(Name = "Result")]
         public string Result { get; set; }
+
+        [Display(Name = "Data")]
+        public DateTime Date { get; set; }
     }
 }
