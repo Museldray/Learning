@@ -50,7 +50,7 @@ namespace FizzBuzz_dotNET
                 }
                 else
                 {
-                    fizzbuzz.Result = Convert.ToString(fizzbuzz.Number);
+                    fizzbuzz.Result = $"Liczba: {fizzbuzz.Number} nie spełnia kryteriów Fizz/Buzz";
                 }
 
                 HttpContext.Session.SetString("Wynik", JsonConvert.SerializeObject(fizzbuzz));
