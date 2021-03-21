@@ -19,7 +19,7 @@
             <button type="submit" class="btn btn-primary">Zatwierdź</button>
         </div>
         <br />
-        @if (Model.fizzbuzz != null)
+        @if (Model.fizzbuzz != null && Model.fizzbuzz.Result != null)
         {
             <div class="text-center">
                 <h4>Otrzymano: @Model.fizzbuzz.Result</h4>
