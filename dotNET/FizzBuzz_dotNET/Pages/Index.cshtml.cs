@@ -36,19 +36,17 @@ namespace FizzBuzz_dotNET
             }
             else
             {
-                if (fizzbuzz.Number % 3 == 0 && fizzbuzz.Number % 5 == 0)
+                if (fizzbuzz.Number % 3 == 0)
                 {
-                    fizzbuzz.Result = "FizzBuzz";
+                    fizzbuzz.Result += "Fizz";
                 }
-                else if (fizzbuzz.Number % 5 == 0)
+
+                if (fizzbuzz.Number % 5 == 0)
                 {
-                    fizzbuzz.Result = "Buzz";
+                    fizzbuzz.Result += "Buzz";
                 }
-                else if (fizzbuzz.Number % 3 == 0)
-                {
-                    fizzbuzz.Result = "Fizz";
-                }
-                else
+
+                if(fizzbuzz.Result == null)
                 {
                     fizzbuzz.Result = $"Liczba: {fizzbuzz.Number} nie spełnia kryteriów Fizz/Buzz";
                 }
