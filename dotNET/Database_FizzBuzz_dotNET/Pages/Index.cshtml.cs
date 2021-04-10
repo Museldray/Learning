@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Database_FizzBuzz_dotNET.Models;
+using Database_FizzBuzz_dotNET.Data;
 
 using Microsoft.AspNetCore.Http;
 
@@ -20,12 +21,13 @@ namespace Database_FizzBuzz_dotNET
         {
             _logger = logger;
         }
+
         [BindProperty]
         public FizzBuzz fizzbuzz { get; set; }
 
         public void OnGet()
         {
-
+            
         }
 
         public IActionResult OnPost()

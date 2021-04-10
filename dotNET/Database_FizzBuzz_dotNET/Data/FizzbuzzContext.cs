@@ -6,10 +6,12 @@ using Database_FizzBuzz_dotNET.Models;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Database_FizzBuzz_dotNET
+namespace Database_FizzBuzz_dotNET.Data
 {
-    public class FizzbuzzContext
+    public class FizzbuzzContext : DbContext
     {
         public DbSet<FizzBuzz> FizzBuzz { get; set; }
+
+        public FizzbuzzContext(DbContextOptions options) : base(options) { }
     }
 }
