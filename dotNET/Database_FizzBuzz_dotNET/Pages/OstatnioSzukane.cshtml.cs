@@ -24,7 +24,7 @@ namespace Database_FizzBuzz_dotNET.Pages
         public void OnGet()
         {
             var FizzbuzzQuery = from FizzBuzz in _context.FizzBuzz orderby FizzBuzz.Date descending select FizzBuzz;
-            fizzBuzzes = FizzbuzzQuery.ToList();
+            fizzBuzzes = FizzbuzzQuery.Take(10).ToList();
         }
     }
 }
