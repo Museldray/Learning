@@ -6,11 +6,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using FizzBuzz_dotNET.Models;
+using Database_FizzBuzz_dotNET.Models;
 
 using Microsoft.AspNetCore.Http;
 
-namespace FizzBuzz_dotNET
+namespace Database_FizzBuzz_dotNET
 {
     public class IndexModel : PageModel
     {
