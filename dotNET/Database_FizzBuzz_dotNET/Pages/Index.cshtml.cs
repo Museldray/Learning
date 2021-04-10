@@ -7,7 +7,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Database_FizzBuzz_dotNET.Models;
-using Database_FizzBuzz_dotNET.Data;
 
 using Microsoft.AspNetCore.Http;
 
@@ -15,13 +14,11 @@ namespace Database_FizzBuzz_dotNET
 {
     public class IndexModel : PageModel
     {
-        public FizzbuzzContext _context;
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger, FizzbuzzContext context)
+        public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
-            _context = context;
         }
 
         [BindProperty]
@@ -44,9 +41,6 @@ namespace Database_FizzBuzz_dotNET
 
                 fizzbuzz.Date = DateTime.Now;
                 HttpContext.Session.SetString("Wynik", JsonConvert.SerializeObject(fizzbuzz));
-
-                _context.FizzBuzz.Add(fizzbuzz);
-                _context.SaveChanges();
 
                 return Page();
             }
