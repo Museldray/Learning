@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using Database_FizzBuzz_dotNET.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace FizzBuzz_dotNET
+namespace Database_FizzBuzz_dotNET
 {
     public class Startup
     {
