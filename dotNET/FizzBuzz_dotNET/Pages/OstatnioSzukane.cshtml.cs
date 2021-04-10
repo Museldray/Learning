@@ -4,23 +4,27 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Http;
-using Newtonsoft.Json;
 using FizzBuzz_dotNET.Models;
+using FizzBuzz_dotNET.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace FizzBuzz_dotNET.Pages
 {
-    public class FizzBuzzModel : PageModel
+    public class OstatnioSzukaneModel : PageModel
     {
-        public FizzBuzz fizzbuzz { get; set; }
+        private readonly FizzbuzzContext _context;
+
+        public OstatnioSzukaneModel(FizzbuzzContext context)
+        {
+            _context = context;
+        }
+
+        public IList<FizzBuzz> fizzBuzzes { get; set; }
+
         public void OnGet()
         {
-            var result = HttpContext.Session.GetString("Wynik");
-
-            if (result != null) 
-            {
-                fizzbuzz = JsonConvert.DeserializeObject<FizzBuzz>(result);
-            };
+            var FizzbuzzQuery = from FizzBuzz in _context.FizzBuzz orderby FizzBuzz.Date descending select FizzBuzz;
+            fizzBuzzes = FizzbuzzQuery.Take(10).ToList();
         }
     }
 }

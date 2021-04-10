@@ -1,22 +1,32 @@
 ﻿@page
-@model FizzBuzz_dotNET.Pages.FizzBuzzModel
+@model OstatnioSzukaneModel
 @{
-    ViewData["Title"] = "Ostatnio szukane";
 }
-
-<p>Dane w zapisane w sesji</p>
-@if (Model.fizzbuzz != null)
-{ 
-<p>
-    @Html.DisplayNameFor(model => Model.fizzbuzz.Number):
-    @Model.fizzbuzz.Number
-</p>
-<p>
-    @Html.DisplayNameFor(model => Model.fizzbuzz.Result):
-    @Model.fizzbuzz.Result
-</p>
-<p>
-    @Html.DisplayNameFor(model => Model.fizzbuzz.Date):
-    @Model.fizzbuzz.Date
-</p>
-}
+<h2 class="text-center">Ostatnio szukane:</h2>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th class="text-center">Numer</th>
+        <th class="text-center">Wynik</th>
+        <th class="text-center">Data</th>
+    </tr>
+    @foreach (var item in Model.fizzBuzzes)
+    {
+    <tr>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => item.Number)
+        </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => item.Result)
+        </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            Usuń
+        </td>
+        <td>
+            Edytuj
+        </td>
+    </tr>
+    }
+</table>
