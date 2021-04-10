@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
-using Database_FizzBuzz_dotNET.Models;
+using FizzBuzz_dotNET.Models;
 
-namespace Database_FizzBuzz_dotNET.Pages
+namespace FizzBuzz_dotNET.Pages
 {
     public class FizzBuzzModel : PageModel
     {

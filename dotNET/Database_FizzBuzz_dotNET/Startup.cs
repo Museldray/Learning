@@ -8,10 +8,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Database_FizzBuzz_dotNET.Data;
+using FizzBuzz_dotNET.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace Database_FizzBuzz_dotNET
+namespace FizzBuzz_dotNET
 {
     public class Startup
     {

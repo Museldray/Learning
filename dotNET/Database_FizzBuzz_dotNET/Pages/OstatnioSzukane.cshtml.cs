@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Database_FizzBuzz_dotNET.Models;
-using Database_FizzBuzz_dotNET.Data;
+using FizzBuzz_dotNET.Models;
+using FizzBuzz_dotNET.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace Database_FizzBuzz_dotNET.Pages
+namespace FizzBuzz_dotNET.Pages
 {
     public class OstatnioSzukaneModel : PageModel
     {
