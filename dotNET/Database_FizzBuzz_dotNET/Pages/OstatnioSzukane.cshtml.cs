@@ -23,7 +23,8 @@ namespace Database_FizzBuzz_dotNET.Pages
 
         public void OnGet()
         {
-            fizzBuzzes = _context.FizzBuzz.ToList();
+            var FizzbuzzQuery = from FizzBuzz in _context.FizzBuzz orderby FizzBuzz.Date descending select FizzBuzz;
+            fizzBuzzes = FizzbuzzQuery.ToList();
         }
     }
 }
