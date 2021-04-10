@@ -15,11 +15,13 @@ namespace Database_FizzBuzz_dotNET
 {
     public class IndexModel : PageModel
     {
+        public FizzbuzzContext _context;
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(ILogger<IndexModel> logger, FizzbuzzContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         [BindProperty]
@@ -42,6 +44,9 @@ namespace Database_FizzBuzz_dotNET
 
                 fizzbuzz.Date = DateTime.Now;
                 HttpContext.Session.SetString("Wynik", JsonConvert.SerializeObject(fizzbuzz));
+
+                _context.FizzBuzz.Add(fizzbuzz);
+                _context.SaveChanges();
 
                 return Page();
             }
