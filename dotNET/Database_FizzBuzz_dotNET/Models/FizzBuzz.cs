@@ -8,9 +8,6 @@ namespace Database_FizzBuzz_dotNET.Models
 {
     public class FizzBuzz
     {
-        [Required]
-        public int Id { get; set; }
-
         [Range(1, 1000)]
         [Required(ErrorMessage = "Pole jest obowiązkowe")]
         [Display(Name = "Numer")]
