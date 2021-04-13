@@ -17,6 +17,7 @@ namespace FizzBuzz_dotNET.Models
         public int Number { get; set; }
 
         [Display(Name = "Result")]
+        [MaxLengthAttribute(50)]
         public string Result { get; set; }
 
         [Display(Name = "Data")]
