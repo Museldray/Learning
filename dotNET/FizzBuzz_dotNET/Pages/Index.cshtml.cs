@@ -7,28 +7,25 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using FizzBuzz_dotNET.Models;
-using FizzBuzz_dotNET.Data;
+
 using Microsoft.AspNetCore.Http;
 
 namespace FizzBuzz_dotNET
 {
     public class IndexModel : PageModel
     {
-        public FizzbuzzContext _context;
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger, FizzbuzzContext context)
+        public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
-            _context = context;
         }
-
         [BindProperty]
         public FizzBuzz fizzbuzz { get; set; }
 
         public void OnGet()
         {
-            
+
         }
 
         public IActionResult OnPost()
@@ -39,13 +36,25 @@ namespace FizzBuzz_dotNET
             }
             else
             {
-                fizzbuzz.Result = fizzbuzz.CheckResult(fizzbuzz.Number);
+                if (fizzbuzz.Number % 3 == 0 && fizzbuzz.Number % 5 == 0)
+                {
+                    fizzbuzz.Result = "FizzBuzz";
+                }
+                else if (fizzbuzz.Number % 5 == 0)
+                {
+                    fizzbuzz.Result = "Buzz";
+                }
+                else if (fizzbuzz.Number % 3 == 0)
+                {
+                    fizzbuzz.Result = "Fizz";
+                }
+                else
+                {
+                    fizzbuzz.Result = $"Liczba: {fizzbuzz.Number} nie spełnia kryteriów Fizz/Buzz";
+                }
 
                 fizzbuzz.Date = DateTime.Now;
                 HttpContext.Session.SetString("Wynik", JsonConvert.SerializeObject(fizzbuzz));
-
-                _context.FizzBuzz.Add(fizzbuzz);
-                _context.SaveChanges();
 
                 return Page();
             }
