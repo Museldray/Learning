@@ -6,7 +6,6 @@ strony “Ostatnio Szukane”.
 - Na głównej stronie użytkownik odwiedzający aplikację widzi formularz
 przyjmujący jedną liczbę całkowitą z zakresu 1-1000. Jeśli użytkownik poda
 liczbę spoza zakresu lub poda inny typ danych np. znaki, powinien zostać
-Programowanie aplikacji WWW w technologii .NET, Politechnika Białostocka 2020/2021, IKS
 wyświetlony komunikat o błędzie. Błędy oznaczone są na czerwono,
 pogrubioną czcionką.
 - Na stronie głównej użytkownik otrzymuje informację o wyniku
