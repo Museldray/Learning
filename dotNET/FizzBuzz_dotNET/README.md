@@ -13,5 +13,6 @@ Ponadto:
 - Aplikacja nadal powinna realizować zapis danych do sesji. Odczyt z sesji
 powinien być dostępny na stronie “Zapisane w sesji” (0.25pkt)
 - Wszystkie zmiany powinny zostać zapisane na oddzielnej gałęzi w
-istniejącym repozytorium dla aplikacji Fizzbuzz (0.25pkt). Link do
-repozytorium proszę umieścić na platformie CEZ.
+istniejącym repozytorium dla aplikacji Fizzbuzz (0.25pkt). 
+
+Link do repozytorium proszę umieścić na platformie CEZ.
