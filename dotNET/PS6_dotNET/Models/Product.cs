@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace PS6_dotNET.Models
 {
@@ -10,39 +8,20 @@ namespace PS6_dotNET.Models
     {
         [Required]
         public int Id { get; set; }
+        [Display(Name = "Maker")]
+        public string Maker { get; set; }
+        [JsonPropertyName("img")]
+        [Display(Name = "Image")]
+        public string Image { get; set; }
+        [Display(Name = "Url")]
+        public string Url { get; set; }
+        [Display(Name = "Title")]
+        public string Title { get; set; }
+        [Display(Name = "Description")]
+        public string Description { get; set; }
 
-        [Range(1, 1000)]
-        [Required(ErrorMessage = "Pole jest obowiązkowe")]
-        [Display(Name = "Numer")]
-        public int Number { get; set; }
+        public override string ToString() => JsonSerializer.Serialize<Product>(this);
 
-        [Display(Name = "Result")]
-        [MaxLengthAttribute(50)]
-        public string Result { get; set; }
-
-        [Display(Name = "Data")]
-        public DateTime Date { get; set; }
-
-        public string CheckResult(int number)
-        {
-            string result = "";
-
-            if (number % 3 == 0)
-            {
-                result += "Fizz";
-            }
-
-            if (number % 5 == 0)
-            {
-                result += "Buzz";
-            }
-
-            if (result == "")
-            {
-                result = $"Liczba: {number} nie spełnia kryteriów Fizz/Buzz";
-            }
-
-            return result;
-        }
+ 
     }
 }

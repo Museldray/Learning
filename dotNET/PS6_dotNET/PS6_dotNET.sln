@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PS6_dotNET", "PS6_dotNET.csproj", "{20391F7D-B63A-4046-90F5-31EACEDC47A4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz_dotNET", "..\FizzBuzz_dotNET\FizzBuzz_dotNET.csproj", "{8AC16332-1B57-4557-AF9F-7810D38EB8BA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{20391F7D-B63A-4046-90F5-31EACEDC47A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20391F7D-B63A-4046-90F5-31EACEDC47A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20391F7D-B63A-4046-90F5-31EACEDC47A4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8AC16332-1B57-4557-AF9F-7810D38EB8BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8AC16332-1B57-4557-AF9F-7810D38EB8BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8AC16332-1B57-4557-AF9F-7810D38EB8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8AC16332-1B57-4557-AF9F-7810D38EB8BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

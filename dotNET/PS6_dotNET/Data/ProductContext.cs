@@ -8,10 +8,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PS6_dotNET.Data
 {
-    public class FizzbuzzContext : DbContext
+    public class ProductContext : DbContext
     {
-        public DbSet<Product> FizzBuzz { get; set; }
+        public DbSet<Product> Products { get; set; }
 
-        public FizzbuzzContext(DbContextOptions options) : base(options) { }
+        public ProductContext(DbContextOptions options) : base(options) { }
     }
 }
