@@ -1,0 +1,35 @@
+﻿@page
+@model PS6_dotNET.Pages.PobraneZPlikuModel
+@{
+}
+
+<h2 class="text-center">Ostatnio szukane:</h2>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th class="text-center">Id</th>
+        <th class="text-center">Title</th>
+        <th class="text-center">Maker</th>
+        <th class="text-center">Image</th>
+        <th class="text-center">Url</th>
+    </tr>
+    @foreach (var item in Model.Products)
+    {
+        <tr>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Maker)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Url)
+            </td>
+        </tr>
+    }
+</table>

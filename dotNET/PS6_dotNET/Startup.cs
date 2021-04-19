@@ -16,7 +16,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 
-namespace PS6_dotNET.WebSite
+namespace PS6_dotNET
 {
     public class Startup
     {
