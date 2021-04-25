@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PS7_dotNET.Middleware;
 
 namespace PS7_dotNET
 {
@@ -24,6 +25,8 @@ namespace PS7_dotNET
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddBrowserDetection();
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +42,8 @@ namespace PS7_dotNET
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseBrowserMiddleware();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
