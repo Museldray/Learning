@@ -1,22 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.Json;
-using System.Threading.Tasks;
-using PS6_dotNET.Components;
-using PS6_dotNET.Models;
-using PS6_dotNET.Data;
-using PS6_dotNET.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using PS6_dotNET.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace PS6_dotNET.WebSite
+namespace PS6_dotNET
 {
     public class Startup
     {
@@ -30,16 +25,18 @@ namespace PS6_dotNET.WebSite
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ProductContext>(options =>
+            services.AddDbContext<FizzbuzzContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("Database_Studies_dotNET"));
+                options.UseSqlServer(Configuration.GetConnectionString("Database_FizzBuzz_dotNET"));
             });
 
             services.AddRazorPages();
-            services.AddServerSideBlazor();
-            services.AddHttpClient();
-            services.AddControllers();
-            services.AddTransient<JsonFileProductService>();
+            services.AddMemoryCache();
+            services.AddSession(options =>
+            {
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,19 +59,11 @@ namespace PS6_dotNET.WebSite
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
-                endpoints.MapControllers();
-                endpoints.MapBlazorHub();
-
-                // endpoints.MapGet("/products", (context) => 
-                // {
-                //     var products = app.ApplicationServices.GetService<JsonFileProductService>().GetProducts();
-                //     var json = JsonSerializer.Serialize<IEnumerable<Product>>(products);
-                //     return context.Response.WriteAsync(json);
-                // });
             });
         }
     }
