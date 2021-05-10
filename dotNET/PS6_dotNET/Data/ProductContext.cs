@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using PS6_dotNET.Models;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace PS6_dotNET.Data
 {
     public class ProductContext : DbContext

@@ -9,16 +9,18 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace PS6_dotNET.Pages
+namespace PS6_dotNET.WebSite.Pages
 {
     public class IndexModel : PageModel
     {
+        public ProductContext _context;
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger, JsonFileProductService productService)
+        public IndexModel(ILogger<IndexModel> logger, JsonFileProductService productService, ProductContext context)
         {
             _logger = logger;
             ProductService = productService;
+            _context = context;
         }
 
         public JsonFileProductService ProductService { get; }

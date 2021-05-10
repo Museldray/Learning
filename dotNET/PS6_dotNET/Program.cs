@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace PS6_dotNET
+namespace PS6_dotNET.WebSite
 {
     public class Program
     {
