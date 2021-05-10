@@ -1,0 +1,37 @@
+﻿@page
+@model FizzBuzz_dotNET.Pages.Fizzbuzzes.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>FizzBuzz</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FizzBuzz.Number)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FizzBuzz.Number)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FizzBuzz.Result)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FizzBuzz.Result)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FizzBuzz.Date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FizzBuzz.Date)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.FizzBuzz.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
