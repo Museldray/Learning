@@ -41,11 +41,19 @@ namespace FizzBuzz_dotNET
             {
                 fizzbuzz.Result = fizzbuzz.CheckResult(fizzbuzz.Number);
 
-                fizzbuzz.Date = DateTime.Now;
-                HttpContext.Session.SetString("Wynik", JsonConvert.SerializeObject(fizzbuzz));
+                if(User.Identity.Name == null)
+                {
+                    return Page();
+                }
+                else
+                {
+                    fizzbuzz.Date = DateTime.Now;
+                    fizzbuzz.Email = User.Identity.Name;
+                    HttpContext.Session.SetString("Wynik", JsonConvert.SerializeObject(fizzbuzz));
 
-                _context.FizzBuzz.Add(fizzbuzz);
-                _context.SaveChanges();
+                    _context.FizzBuzz.Add(fizzbuzz);
+                    _context.SaveChanges();
+                }
 
                 return Page();
             }

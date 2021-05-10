@@ -36,6 +36,8 @@ namespace FizzBuzz_dotNET.Pages.Fizzbuzzes
                 return Page();
             }
 
+            FizzBuzz.Email = User.Identity.Name;
+
             _context.FizzBuzz.Add(FizzBuzz);
             await _context.SaveChangesAsync();
 

@@ -22,6 +22,8 @@ namespace FizzBuzz_dotNET.Models
 
         [Display(Name = "Data")]
         public DateTime Date { get; set; }
+        [Display(Name = "Email")]
+        public string Email { get; set; }
 
         public string CheckResult(int number)
         {

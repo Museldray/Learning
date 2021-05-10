@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using FizzBuzz_dotNET.Data;
 using FizzBuzz_dotNET.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FizzBuzz_dotNET.Pages.Fizzbuzzes
 {
