@@ -58,6 +58,7 @@ namespace FizzBuzz_dotNET
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseSession();
 

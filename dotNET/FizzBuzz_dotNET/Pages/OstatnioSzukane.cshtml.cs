@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using FizzBuzz_dotNET.Models;
 using FizzBuzz_dotNET.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FizzBuzz_dotNET.Pages
 {
+    [Authorize]
     public class OstatnioSzukaneModel : PageModel
     {
         private readonly FizzbuzzContext _context;
