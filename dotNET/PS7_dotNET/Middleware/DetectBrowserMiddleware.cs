@@ -23,7 +23,15 @@ namespace PS7_dotNET.Middleware
             //var userAgent = httpContext.Request.Headers["User-Agent"].ToString();
             var browser = detector.Browser;
 
-            if(browser.Name == BrowserNames.Edge || browser.Name == BrowserNames.EdgeChromium || browser.Name == BrowserNames.InternetExplorer)
+            if(browser.Name == BrowserNames.Edge)
+            {
+                await httpContext.Response.WriteAsync("Przegladarka nie jest obslugiwana!");
+            }
+            else if(browser.Name == BrowserNames.EdgeChromium)
+            {
+                await httpContext.Response.WriteAsync("Przegladarka nie jest obslugiwana!");
+            }
+            else if(browser.Name == BrowserNames.InternetExplorer)
             {
                 await httpContext.Response.WriteAsync("Przegladarka nie jest obslugiwana!");
             }
